@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ask Me API</title>
+    <link href="./assets/xatkit.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header-container">
+            <h1 class="has-text-align-left" id="patricia-jackson">Ask Me API</h1>
+        </div>
+        <div class="content-container">
+            <p>Have all your questions about any OAS answered using the chatbot</p>
+            <ol>
+                <li>Load the link to your Open API Specifications
+                    <ul>
+                        <li>eg &#8211; "Load <a href="https://petstore3.swagger.io/api/v3/openapi.json"
+                                rel="nofollow">https://petstore3.swagger.io/api/v3/openapi.json</a>"</li>
+                    </ul>
+                </li>
+                <li>Start asking your questions!</li>
+                <li>Try saying &#8220;How many endpoints does it have?&#8221;
+                    <ul>
+                        <li>or &#8220;What are the API&#8217;s endpoints?&#8221;</li>
+                    </ul>
+                    <ul>
+                        <li>Get more specific with an endpoint &#8211;
+                            <ul>
+                                <li>&#8220;Describe &lt;endpoint&gt;&#8221;</li>
+                                <li>and then &#8220;What are &lt;endpoint&gt;&#8217;s http methods?&#8221;</li>
+                                <li>or &#8220;Give me &lt;http_method&gt;&#8217;s security information&#8221;</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>And more&#8230;</li>
+            </ol>
+        </div>
+    </div>
+    <div id="xatkit-chat"></div>
+    <!-- <div id="my-id"></div> -->
+
+    <script src="./assets/xatkit.min.js"></script>
+    <script type="application/javascript">
+        xatkit.renderXatkitWidget("http://localhost:5000");
+    </script>
+</body>
+
+</html>
